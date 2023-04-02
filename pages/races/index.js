@@ -103,68 +103,34 @@ const index = () => {
                             </div>
                             </li>
 
-                            {/* <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
-                                <div>
-                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Energy</span>
-                                </div>
-                                <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                                    <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                        <div className="bg-cyan-500 h-full" style={{ width: `${product?.statistiques?.find((x) => x?.type === 'Energy consumption')?.value.toString()}%` }} />
-                                    </div>
-                                    <span className="text-orange-500 ml-3 font-medium">{product?.statistiques?.find((x) => x?.type === 'Energy consumption')?.value.toString()}</span>{' '}
-                                </div>
-                            </li>
                             <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                                 <div>
-                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Grip</span>
+                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Coins</span>
                                 </div>
-                                <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                                    <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                        <div className="bg-pink-500 h-full" style={{ width: `${product?.statistiques?.find((x) => x?.type === 'Grip')?.value.toString()}%` }} />
-                                    </div>
-                                    <span className="text-orange-500 ml-3 font-medium">{product?.statistiques?.find((x) => x?.type === 'Grip')?.value.toString()}</span>{' '}
+                                <div>
+                                    {
+                                        product?.medals[product?.medals?.length - 1].rewardCoins + " $ "
+
+                                    }
                                 </div>
+
                             </li>
+
                             <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                                 <div>
-                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Handling Ability</span>
+                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Points</span>
                                 </div>
-                                <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                                    <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                        <div className="bg-green-500 h-full" style={{ width: `${product?.statistiques?.find((x) => x?.type === 'Handling ability')?.value.toString()}%` }} />
-                                    </div>
-                                    <span className="text-orange-500 ml-3 font-medium">{product?.statistiques?.find((x) => x?.type === 'Handling ability')?.value.toString()}</span>{' '}
-                                </div>
-                            </li>
-                            <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                                 <div>
-                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Power</span>
+                                    {
+                                        product?.medals[product?.medals?.length - 1].rewardPoints + " Pts "
+
+                                    }
                                 </div>
-                                <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                                    <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                        <div className="bg-purple-500 h-full" style={{ width: `${product?.statistiques?.find((x) => x?.type === 'Power')?.value.toString()}%` }} />
-                                    </div>
-                                    <span className="text-orange-500 ml-3 font-medium">{product?.statistiques?.find((x) => x?.type === 'Power')?.value.toString()}</span>{' '}
-                                </div>
+
                             </li>
-                            <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
-                                <div>
-                                    <span className="text-900 font-medium mr-2 mb-1 md:mb-0">weight</span>
-                                </div>
-                                <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
-                                    <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                        <div className="bg-teal-500 h-full" style={{ width: `${product?.statistiques?.find((x) => x?.type === 'Weight')?.value.toString()}%` }} />
-                                    </div>
-                                    <span className="text-orange-500 ml-3 font-medium">{product?.statistiques?.find((x) => x?.type === 'Weight')?.value.toString()}</span>{' '}
-                                </div>
-                            </li> */}
+
                         </ul>
 
-                        <div class="bouton-centre">
-                            <button aria-label="Help" className="p-button p-component p-button-help">
-                                <span class="p-button-label p-c">Sell</span>
-                            </button>
-                        </div>
                     </div>
                 </div>
             ))}
