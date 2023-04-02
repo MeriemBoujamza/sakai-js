@@ -3,15 +3,29 @@ import {useState, useEffect} from "react"
 // import ''
 
 function formatString(inputString) {
+
     const prefix = '../../../';
     const formattedString = inputString.replace(prefix, '/');
     return formattedString+".png";
 }
 
+ async function handleBuy(itemId){
+const res = await fetch(`http://185.98.136.60:9090/items/buy/${itemId}/6`, {
+        headers: {
+            Authorization: `Bearer ${process.env.NEXT_PUBLIC_TOKEN} `
+        }
+    });
+    return res.ok;
+}
 
 const index = () => {
 
     const [products, setProducts] = useState(null);
+    const [isSuccessuful, setisSuccessuful] = useState(false);
+
+useEffect(()=>{
+
+},[isSuccessuful])
 
     //This function gets the inventory
     async function getItems(setProducts) {
@@ -127,7 +141,7 @@ const index = () => {
 
                         <div class="bouton-centre">
                             <button aria-label="Help" className="p-button p-component p-button-help">
-                                <span class="p-button-label p-c">Sell</span>
+                                <span class="p-button-label p-c" onclick={handleBuy} >Buy</span>
                             </button>
                         </div>
                     </div>
