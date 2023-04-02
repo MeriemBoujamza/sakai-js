@@ -294,14 +294,12 @@ const Dashboard = () => {
                             />
                         </div>
                     </div>
-                   
+
                     <div class="container">
                         <div class="image-wrapper">
-                        <Image src="/assets/ourV.png" alt="Example image" width={300} height={300} />
+                            <Image src="/assets/ourV.png" alt="Example image" width={300} height={300} />
                         </div>
                     </div>
-
-
 
                     <ul className="list-none p-0 m-0">
                         <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
@@ -310,7 +308,7 @@ const Dashboard = () => {
                             </div>
                             <div className="mt-2 md:mt-0 flex align-items-center">
                                 <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                    <div className="bg-orange-500 h-full" style={{ width: `${vehicle.acceleration}` }} />
+                                    <div className="bg-orange-500 h-full" style={{ width: `${vehicle.acceleration}%` }} />
                                 </div>
                                 <span className="text-orange-500 ml-3 font-medium">{vehicle.acceleration}</span>
                             </div>
@@ -321,7 +319,7 @@ const Dashboard = () => {
                             </div>
                             <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                                 <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                    <div className="bg-cyan-500 h-full" style={{ width: `${vehicle.energyConsumption}` }} />
+                                    <div className="bg-cyan-500 h-full" style={{ width: `${vehicle.energyConsumption}%` }} />
                                 </div>
                                 <span className="text-cyan-500 ml-3 font-medium"> {vehicle.energyConsumption} </span>
                             </div>
@@ -332,7 +330,7 @@ const Dashboard = () => {
                             </div>
                             <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                                 <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                    <div className="bg-pink-500 h-full" style={{ width: `${vehicle.grip}` }} />
+                                    <div className="bg-pink-500 h-full" style={{ width: `${vehicle.grip}%` }} />
                                 </div>
                                 <span className="text-pink-500 ml-3 font-medium">{vehicle.grip}</span>
                             </div>
@@ -343,7 +341,7 @@ const Dashboard = () => {
                             </div>
                             <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                                 <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                    <div className="bg-green-500 h-full" style={{ width: '35%' }} />
+                                    <div className="bg-green-500 h-full" style={{ width: `${vehicle.handlingAbility}%` }} />
                                 </div>
                                 <span className="text-green-500 ml-3 font-medium">{vehicle.handlingAbility}</span>
                             </div>
@@ -354,7 +352,7 @@ const Dashboard = () => {
                             </div>
                             <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                                 <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                    <div className="bg-purple-500 h-full" style={{ width: '75%' }} />
+                                    <div className="bg-purple-500 h-full" style={{ width: `${vehicle.power}%` }} />
                                 </div>
                                 <span className="text-purple-500 ml-3 font-medium">{vehicle.power}</span>
                             </div>
@@ -365,7 +363,7 @@ const Dashboard = () => {
                             </div>
                             <div className="mt-2 md:mt-0 ml-0 md:ml-8 flex align-items-center">
                                 <div className="surface-300 border-round overflow-hidden w-10rem lg:w-6rem" style={{ height: '8px' }}>
-                                    <div className="bg-teal-500 h-full" style={{ width: '40%' }} />
+                                    <div className="bg-teal-500 h-full" style={{ width: `${vehicle.weight}%` }} />
                                 </div>
                                 <span className="text-teal-500 ml-3 font-medium">{vehicle.weight}</span>
                             </div>

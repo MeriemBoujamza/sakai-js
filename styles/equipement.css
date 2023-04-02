@@ -36,11 +36,12 @@
     background-color: #e2e2e2;
   }
 
-
+/* image */
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
+    /*height: 100vh;  hauteur égale à la taille de l'écran */
   }
 
   .image-wrapper {
@@ -53,3 +54,13 @@
     max-height: 100%; /* hauteur maximale de l'image */
     vertical-align: middle; /* centrage vertical */
   }
+
+
+/* button */
+.bouton-centre {
+  text-align: center;
+}
+
+.bouton-centre button {
+  margin: 0 auto;
+}
