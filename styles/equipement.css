@@ -35,3 +35,21 @@
   tbody tr:hover {
     background-color: #e2e2e2;
   }
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-wrapper {
+    text-align: center; /* centrage horizontal */
+    max-width: 80%; /* largeur maximale de l'image */
+  }
+
+  img {
+    display: inline-block; /* pour que la propriété vertical-align fonctionne */
+    max-height: 100%; /* hauteur maximale de l'image */
+    vertical-align: middle; /* centrage vertical */
+  }

@@ -9,6 +9,7 @@ import { LayoutContext } from '../layout/context/layoutcontext';
 import Link from 'next/link';
 import useSWR from 'swr';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 
 //This function returns the score, coins...
@@ -244,20 +245,16 @@ const Dashboard = () => {
                             <th>Is Equipped</th>
                         </tr>
                         {/* {JSON.stringify(products)} */}
-                        {
-                            products?.map((item) => (
-                                <tr>
-                                    <td>{item?.name}</td>
-                                    <td>{item?.type}</td>
+                        {products?.map((item) => (
+                            <tr>
+                                <td>{item?.name}</td>
+                                <td>{item?.type}</td>
 
-                                    <td>{item?.sellingPrice}</td>
-                                    <td>{String(item?.isEquipped)}</td>
-                                </tr>
-                            ))
-                        }
+                                <td>{item?.sellingPrice}</td>
+                                <td>{String(item?.isEquipped)}</td>
+                            </tr>
+                        ))}
                     </table>
-
-
 
                     {/* <DataTable value={products} rows={5} paginator responsiveLayout="scroll">
                         <Column field="name" header="Name" body={(data) => <img className="shadow-2" src={`/demo/images/product/${data.image}`} alt={data.image} width="50" />} />
@@ -280,12 +277,11 @@ const Dashboard = () => {
                 </div>
             </div>
 
-
-
             <div className="col-12 xl:col-6">
                 <div className="card">
                     <div className="flex justify-content-between align-items-center mb-5">
                         <h5>Caracteristiques de vehicule</h5>
+
                         <div>
                             <Button type="button" icon="pi pi-ellipsis-v" className="p-button-rounded p-button-text p-button-plain" onClick={(event) => menu1.current.toggle(event)} />
                             <Menu
@@ -298,6 +294,15 @@ const Dashboard = () => {
                             />
                         </div>
                     </div>
+                   
+                    <div class="container">
+                        <div class="image-wrapper">
+                        <Image src="/assets/ourV.png" alt="Example image" width={300} height={300} />
+                        </div>
+                    </div>
+
+
+
                     <ul className="list-none p-0 m-0">
                         <li className="flex flex-column md:flex-row md:align-items-center md:justify-content-between mb-4">
                             <div>
