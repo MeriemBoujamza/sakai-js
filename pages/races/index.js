@@ -79,7 +79,7 @@ const index = () => {
                                 <div>
                                     <span className="text-900 font-medium mr-2 mb-1 md:mb-0">Medals</span>
                                 </div>
-                                <div>
+                                <div style={{display:"flex"}}>
                                     {
                                         product?.medals?.map((medal) => (
                                             <div style={{ width:"10px", height:"10px", backgroundColor:`${getColorHexCode(medal.type)}`}}></div>
